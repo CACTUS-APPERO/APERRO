@@ -1,3 +1,10 @@
 jupyter-notebook For Montreal snow shoveling project
 
-M. Le Gras, A. Naullet, A. Calixte, P. Beaunieux (ing1 EPITA)
+Paul Beaunieux
+Aurelien Calixte 
+Arthur Naullet 
+Melvin Le Gras
+
+Ing1 EPITA
+
+Instructions d'installation et d'execution + descriptif de la structure du rendu
