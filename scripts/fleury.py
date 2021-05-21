@@ -3,7 +3,6 @@
 #-- py-version: 3.*  --#
 
 from copy import copy
-
 '''
     is_connected - Checks if a graph in the form of a dictionary is
     connected or not, using Breadth-First Search Algorithm (BFS)
@@ -65,11 +64,20 @@ def fleury(G):
 
         init = len(from_dict(g)) + 0.0
         old_pourcentage = -1
+        
+        
         while len(from_dict(g)) > 0:
-            pourcentage = round((init - len(from_dict(g)) )*100.0/init, 2)
+            
+            # - - - - Affichage du % - - - - -
+            pourcentage = round((init - len(from_dict(g)) )*100.0/init, 3)
             if pourcentage > old_pourcentage:
+                len_to_clear = len(str(old_pourcentage))+1
+                clear = '\x08'* (len_to_clear + 1)
+                print(clear,end="")
                 old_pourcentage = pourcentage
-                print("Calcul du chemin Eulerien:", pourcentage)
+                print("\r[*] Calcul du chemin Eulerien:", pourcentage, "%", end='', flush=True)
+            # - - - - - - - - - - - - - - - - -
+            
             current_vertex = u
             for u in g[current_vertex]:
                 g[current_vertex].remove(u)
