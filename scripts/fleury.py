@@ -64,8 +64,12 @@ def fleury(G):
             u = list(g)[0]
 
         init = len(from_dict(g)) + 0.0
+        old_pourcentage = -1
         while len(from_dict(g)) > 0:
-            print("Calcul du chemin Eulerien:", (init - len(from_dict(g)) )*100.0/init, end = "", flush=True)
+            pourcentage = round((init - len(from_dict(g)) )*100.0/init, 2)
+            if pourcentage > old_pourcentage:
+                old_pourcentage = pourcentage
+                print("Calcul du chemin Eulerien:", pourcentage)
             current_vertex = u
             for u in g[current_vertex]:
                 g[current_vertex].remove(u)

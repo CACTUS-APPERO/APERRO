@@ -2,7 +2,9 @@
 # coding: utf-8
 
 import numpy as np
-from scripts.fleury import *
+import importlib as iplib
+import scripts.fleury as fleury
+iplib.reload(fleury)
 
 # transformation du graph vers un graph eulerien
 def odd_vertices(n, edges):
@@ -96,9 +98,9 @@ def to_dict(G):
 def transform_and_find_eulerian_path(graph, verbose=False):
     if (verbose):
         print("Initial Graph:", graph)
-    print("fixing the Graph")
+    print("[*] fixing the Graph")
     graph = transform_to_eulerian(len(graph), graph)
-    print("Graph fixed")
+    print("[+] Graph fixed")
     graph2 = []
     if (verbose):
         print("To Eulerian Graph:", graph)
@@ -106,11 +108,11 @@ def transform_and_find_eulerian_path(graph, verbose=False):
     for (a,b,c) in graph:
         graph2.append((a,b))
 
-    print("Graph to dict")
+    print("[*] Graph to dict")
     dict_graph2 = to_dict(graph2)
-    print("Starting Fleury")
-    E_path = fleury(dict_graph2)
+    print("[*] Starting Fleury")
+    E_path = fleury.fleury(dict_graph2)
     if (verbose):
-        print("Eulerian path:", E_path)
+        print("[!] Eulerian path:", E_path)
     return E_path
 
