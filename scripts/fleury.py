@@ -62,20 +62,22 @@ def fleury(G):
         else:
             u = list(g)[0]
 
+        # - - - 
         init = len(from_dict(g)) + 0.0
         old_pourcentage = -1
-        
+        # - - -
         
         while len(from_dict(g)) > 0:
             
             # - - - - Affichage du % - - - - -
-            pourcentage = round((init - len(from_dict(g)) )*100.0/init, 3)
+            pourcentage = round((init - len(from_dict(g)) )*100.0/init, 1)
             if pourcentage > old_pourcentage:
                 len_to_clear = len(str(old_pourcentage))+1
-                clear = '\x08'* (len_to_clear + 1)
-                print(clear,end="")
+                clear = '\x08' * (len_to_clear + 2)
                 old_pourcentage = pourcentage
-                print("\r[*] Calcul du chemin Eulerien:", pourcentage, "%", end='', flush=True)
+                print(clear,end="")
+                print("\r[*] Compute Eulerian path:", pourcentage, "%", end='', flush=True)
+                print(clear,end="")
             # - - - - - - - - - - - - - - - - -
             
             current_vertex = u
@@ -93,6 +95,8 @@ def fleury(G):
                 g[u].remove(current_vertex)
                 g.pop(current_vertex)
             trail.append((current_vertex, u))
+    print("\r[*] Compute Eulerian path:", "100", "%", end='', flush=True)
+    print("\n[+] Euleriand Path Found !")
     return trail
 
 
