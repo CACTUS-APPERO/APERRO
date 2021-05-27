@@ -3,7 +3,7 @@
 
 import numpy as np
 import importlib as iplib
-import scripts.fleury as fleury
+import fleury as fleury
 iplib.reload(fleury)
 
 # transformation du graph vers un graph eulerien
