@@ -54,7 +54,7 @@ Enfin, vous aurrez accès au note book et au 2 sous-répertoires Demo et Applica
 └── scripts
 </pre></div>
 
-En cliquant sur les dufférents <i>.ipynb</i> Vous pourrez acceder aux scripts et au démonstration que nous avons faits.
+En cliquant sur les dufférents <i>.ipynb</i> Vous pourrez acceder aux scripts et auw démonstrations que nous avons faits.
 
 
 Auteurs:
