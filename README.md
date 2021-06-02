@@ -1,10 +1,67 @@
-jupyter-notebook For Montreal snow shoveling project
+<h1>Projet de Deineigement intelligent pour la ville de Montréal</h1>
+  Un projet dans le cadre de notre formation a EPITA plus particulièrement du cours ERO1.
+ <!-- Instructions d'installation et d'execution + descriptif de la structure du rendu -->
+<img src="assets/readme/osmnx_montreal.png"/>
+<h2> Sujet </h2>  
+  <p>Les montréalais sont concernés par les questions de déneigement, mais la question d’augmentationde budget reste un point délicat pour le conseil municipal de la ville [Lef19], il s’agit désormais de réduire aumieux le coût des opérations de déneigement, tout en offrant aux montréalais un service efficace. La municipalitéconfie à votre entreprise mère la charge d’effectuer une étude dans le but de minimiser le coût des opérations dedéblaiement. Votre équipe est chargée d’étudier le moyen de minimiser le trajet des appareils de déblaiementdu réseau routier dans Montréal, tout en garantissant que toute la zone qui vous est affectée soit traitée.Il a été constaté que les niveaux neigeux des routes de la ville variaient grandement et qu’il n’est pastoujours nécessaire d’effectuer les opérations de déblaiement sur tout le réseau. Votre hiérarchie a considérécomme judicieux, quand cela est possible, d’effectuer une analyse aérienne par drone des niveaux neigeux, celapermettra de limiter les opérations de déblaiement aux routes les plus concernées. Votre mission est:<p>
+  
+  
+  -  de déterminer le trajet minimal du drone lors du survol du réseau routier, celui-ci doit effectuer unexamen complet du réseau routier pour pouvoir apporter une analyse suffisamment fine
+  -  de déterminer le trajet minimal d’un appareil de déblaiement d’une zone de la ville, celui-ci ne parcourtque dans un sens les routes à double sens.
+  
+  
+  
+<h2> Installation </h2>
+  <h3>Clonage du repo git</h3>
+  <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">git clone https://github.com/CACTUS-APPERO/APERRO.git
 
-Paul Beaunieux
-Aurelien Calixte 
-Arthur Naullet 
-Melvin Le Gras
+<span style="color: #658b00">cd </span>APERRO</pre></div>
 
-Ing1 EPITA
 
-Instructions d'installation et d'execution + descriptif de la structure du rendu
+  <h3>Installations des frameworks necessaires</h3>
+  <p>Pour ce projet, nous avons eu besoin des frameworks et packages suivants: <i>Jupyter Notebook</i>, <i>Osmnx</i>, <i> Networkx </i></p>
+  <h5>Vous pouvez les installer avec la commande suivante:</h5>
+  <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">./setup.sh
+</pre></div>
+
+  
+<h2> Execution </h2>
+<h3> Execution Automatique </h3>
+En executant ce script, jupyter se lancera en arrière plan et toutes les pages du projets s'ouvriront dans firefox.
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">./main_script.sh
+</pre></div>
+
+<h3> Exection manuelle </h3>
+Autrement, vous pouvez vous-même lancer jupyter.
+  <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">jupyter-notebook 
+</pre></div>
+<br>
+Enfin, vous aurrez accès au note book et au 2 sous-répertoires Demo et Application:
+<img src="assets/readme/jupyter_intro.png"/>
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Demo
+├── cache
+├── project_appero_deneigeuse.ipynb
+├── project_appero_drone.ipynb
+└── scripts
+</pre></div>
+
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Application
+├── cache
+├── old_paths
+├── old_sub_graphs
+├── project_appero_deneigeuses.ipynb
+├── project_appero_drone.ipynb
+└── scripts
+</pre></div>
+
+En cliquant sur les dufférents <i>.ipynb</i> Vous pourrez acceder aux scripts et au démonstration que nous avons faits.
+
+
+Auteurs:
+  - Paul Beaunieux
+  -  Aurelien Calixte 
+  - Melvin Le Gras
+  - Arthur Naullet 
+
+-- Ing1 EPITA
+
