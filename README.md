@@ -31,7 +31,7 @@ En executant ce script, jupyter se lancera en arrière plan et toutes les pages 
 <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">./main_script.sh
 </pre></div>
 
-<h3> Exection manuelle </h3>
+<h3> Execution manuelle </h3>
 Autrement, vous pouvez vous-même lancer jupyter.
   <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">jupyter-notebook 
 </pre></div>
