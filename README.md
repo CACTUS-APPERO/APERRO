@@ -1,16 +1,22 @@
+<i>Ce readme est à ouvrir sur github pour une plus grande clarté et lisibilité.</i>
+
 <h1>Projet de Deineigement intelligent pour la ville de Montréal</h1>
   Un projet dans le cadre de notre formation a EPITA plus particulièrement du cours ERO1.
  <!-- Instructions d'installation et d'execution + descriptif de la structure du rendu -->
 <img src="assets/readme/osmnx_montreal.png"/>
 <h2> Sujet </h2>  
-  <p>Les Montréalais sont concernés par les questions de déneigement, mais la question d’augmentation du budget reste un point délicat pour le conseil municipal de la ville [Lef19], il s’agit désormais de réduire au mieux le coût des opérations de déneigement, tout en offrant aux montréalais un service efficace. La municipalité confie à votre entreprise mère la charge d’effectuer une étude dans le but de minimiser le coût des opérations de déblaiement. Votre équipe est chargée d’étudier le moyen de minimiser le trajet des appareils de déblaiement du réseau routier dans Montréal, tout en garantissant que toute la zone qui vous est affectée soit traitée.Il a été constaté que les niveaux neigeux des routes de la ville variaient grandement et qu’il n’est pastoujours nécessaire d’effectuer les opérations de déblaiement sur tout le réseau. Votre hiérarchie a considéré comme judicieux, quand cela est possible, d’effectuer une analyse aérienne par drone des niveaux neigeux, celapermettra de limiter les opérations de déblaiement aux routes les plus concernées. Votre mission est:<p>
+  <p>Les Montréalais sont concernés par les questions de déneigement, mais la question d’augmentation du budget reste un point délicat pour le conseil municipal de la ville, il s’agit désormais de réduire au mieux le coût des opérations de déneigement, tout en offrant aux montréalais un service efficace. La municipalité confie à votre entreprise mère la charge d’effectuer une étude dans le but de minimiser le coût des opérations de déblaiement. Votre équipe est chargée d’étudier le moyen de minimiser le trajet des appareils de déblaiement du réseau routier dans Montréal, tout en garantissant que toute la zone qui vous est affectée soit traitée.Il a été constaté que les niveaux neigeux des routes de la ville variaient grandement et qu’il n’est pastoujours nécessaire d’effectuer les opérations de déblaiement sur tout le réseau. Votre hiérarchie a considéré comme judicieux, quand cela est possible, d’effectuer une analyse aérienne par drone des niveaux neigeux, celapermettra de limiter les opérations de déblaiement aux routes les plus concernées. Votre mission est:<p>
   
   
   -  de déterminer le trajet minimal du drone lors du survol du réseau routier, celui-ci doit effectuer un examen complet du réseau routier pour pouvoir apporter une analyse suffisamment fine.
   -  de déterminer le trajet minimal d’un appareil de déblaiement d’une zone de la ville, celui-ci ne parcourt que dans un sens les routes à double sens.
   
   
-  
+<h4>Regardez notre vidéo de présentation</h4>
+
+[![Watch the video](assets/readme/screen_yt.png)](https://www.youtube.com/watch?v=smpLdxu1vxw)
+
+<h4>Vous pouvez aussi regarder notre pdf de <a href="/assets/readme/synthese.pdf">synthèse</a>.</h4>
 <h2> Installation </h2>
   <h3>Clonage du repo git</h3>
   <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">git clone https://github.com/CACTUS-APPERO/APERRO.git
