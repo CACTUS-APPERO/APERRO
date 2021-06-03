@@ -42,8 +42,10 @@ Autrement, vous pouvez vous-même lancer jupyter.
   <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">jupyter-notebook 
 </pre></div>
 <br>
-Enfin, vous aurrez accès au note book et au 2 sous-répertoires Demo et Application:
+Enfin, vous aurrez accès au note book et aux deux sous-répertoires Demo et Application:
 <img src="assets/readme/jupyter_intro.png"/>
+
+<p> La partie Démo est réservée à l'explication des algorithmes que nous avons choisis d'utiliser pour répondre aux problèmes posés.</p>
 <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Demo
 ├── cache
 ├── project_appero_deneigeuse.ipynb
@@ -51,6 +53,8 @@ Enfin, vous aurrez accès au note book et au 2 sous-répertoires Demo et Applica
 └── scripts
 </pre></div>
 
+<p> La partie Application est la mise en oeuvre de nos algorithmes à l'echelle de Montréal et avec une visualisation des résultats grace au package OSMNX.
+<br>Preview: <br><img src="assets/readme/screen_osmnx.png"/></p>
 <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid white;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Application
 ├── cache
 ├── old_paths
@@ -59,7 +63,6 @@ Enfin, vous aurrez accès au note book et au 2 sous-répertoires Demo et Applica
 ├── project_appero_drone.ipynb
 └── scripts
 </pre></div>
-
 En cliquant sur les différents <i>.ipynb</i> Vous pourrez accéder aux scripts et aux démonstrations que nous avons faits.
 
 
