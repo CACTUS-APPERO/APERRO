@@ -2,13 +2,13 @@
 #-- all rights: @Les enfants Sauvages --#
 #-- bash-version: 3  --#
 
-
+export PATH=$PATH:~/.local/bin
 echo " - - - - Projet ERO: Deneigement intelligent de Montréal - - - -"
 echo "[+] Lancement de Jupyter"
 (jupyter-notebook --browser=firefox 1> /dev/null 2> /dev/null &)
 
 echo "[*] Attente du lancement"
-sleep 5
+sleep 10
 echo "[*] Vous devriez maintenant voir le notebook jupyter dans votre navigateur"
 
 echo "[*] Lancement de la demo sur la partie Drone"
