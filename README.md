@@ -1,4 +1,4 @@
-<i>Ce readme est à ouvrir sur github pour une plus grande clarté et lisibilité.</i>
+<i>Ce readme est à ouvrir sur github pour une plus grande clarté et lisibilité: </i> https://github.com/CACTUS-APPERO/APERRO
 
 <h1>Projet de Deineigement intelligent pour la ville de Montréal</h1>
   Un projet dans le cadre de notre formation a EPITA plus particulièrement du cours ERO1.
